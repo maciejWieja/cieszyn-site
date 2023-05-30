@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cieszyn | home</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="icon" href="./media/herb.png" type="image/png">
+    <link rel="stylesheet" href="./css/glide/glide.core.min.css">
+    <link rel="stylesheet" href="./css/glide/glide.theme.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./media/herb.png" alt="herb cieszyna">
+        </div>
+        <ul class="navbar">
+            <li class="navElement">
+                <a href="./home.html" class="navText">strona główna</a>
+            </li>
+            <li class="navElement">
+                <a href="./about.html" class="navText">o mieście</a>
+            </li>
+            <li class="navElement">
+                <a href="./news.html" class="navText">aktualności</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide"><img src="./media/1.png" alt="cieszyn" class="sliderImg"></li>
+                    <li class="glide__slide"><img src="./media/4.png" alt="cieszyn" class="sliderImg"></li>
+                    <li class="glide__slide"><img src="./media/5.png" alt="cieszyn" class="sliderImg"></li>
+                    <li class="glide__slide"><img src="./media/6.png" alt="cieszyn" class="sliderImg"></li>
+                </ul>
+            </div>
+            <div class="captionContainer">
+                <span class="caption">Cieszyn</span>
+            </div>
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+                <button class="glide__bullet" data-glide-dir="=0"></button>
+                <button class="glide__bullet" data-glide-dir="=1"></button>
+                <button class="glide__bullet" data-glide-dir="=2"></button>
+                <button class="glide__bullet" data-glide-dir="=3"></button>
+            </div>
+        </div>
+        <div class="opinions">
+            <div class="opinion">
+                <div class="top">
+                    <div class="stars">
+                        <img src="./media/fullStar.svg" alt="fullStar" class="star">
+                        <img src="./media/fullStar.svg" alt="fullStar" class="star">
+                        <img src="./media/fullStar.svg" alt="fullStar" class="star">
+                        <img src="./media/fullStar.svg" alt="fullStar" class="star">
+                        <img src="./media/halfStar.svg" alt="halfStar" class="star">
+                    </div>
+                </div>
+                <div class="content">
+                    Cieszyn to miejsce, gdzie można poczuć atmosferę dwóch kultur - polskiej i czeskiej.
+                    Spacerując przez miasto można zauważyć wpływy obu kultur w architekturze, kuchni czy języku.
+                    Jest to z pewnością niezwykłe i ciekawe doświadczenie dla każdego turysty.
+                    Dodatkowo miasto oferuje wiele atrakcji, takich jak festiwale,
+                    koncerty czy imprezy sportowe, dzięki czemu zawsze coś się dzieje.
+                </div>
+                <div class="bottom">
+                    <label class="name">Zofia Kwiatkowska</label>
+                </div>
+            </div>
+            <div class="opinion">
+                <div class="top">
+                    <div class="stars">
+                        <img src="./media/fullStar.svg" alt="fullStar" class="star">
+                        <img src="./media/fullStar.svg" alt="fullStar" class="star">
+                        <img src="./media/fullStar.svg" alt="fullStar" class="star">
+                        <img src="./media/fullStar.svg" alt="fullStar" class="star">
+                        <img src="./media/fullStar.svg" alt="fullStar" class="star">
+                    </div>
+                </div>
+                <div class="content">
+                    Cieszyn to piękne miasto, które zachwyca swoją architekturą, historią i przyrodą.
+                    Jest to idealne miejsce dla miłośników turystyki pieszej i rowerowej,
+                    ponieważ w okolicy znajduje się wiele malowniczych tras i szlaków.
+                    W miasteczku można też zasmakować regionalnych potraw i napojów,
+                    co na pewno przypadnie do gustu smakoszom. Cieszyn to idealne miejsce na krótki wypad za miasto,
+                    gdzie można wypocząć i odpocząć od codziennych obowiązków.
+                </div>
+                <div class="bottom">
+                    <label class="name">Bartosz Jankowski</label>
+                </div>
+            </div>
+            <div class="opinion">
+                <div class="top">
+                    <div class="stars">
+                        <img src="./media/fullStar.svg" alt="fullStar" class="star">
+                        <img src="./media/fullStar.svg" alt="fullStar" class="star">
+                        <img src="./media/fullStar.svg" alt="fullStar" class="star">
+                        <img src="./media/fullStar.svg" alt="fullStar" class="star">
+                        <img src="./media/halfStar.svg" alt="halfStar" class="star">
+                    </div>
+                </div>
+                <div class="content">
+                    Miasto fajnie położone na granicy państwa.
+                    Odniosłam wrażenie, że po stronie Polskiej jest jakoś ładniej,
+                    lepiej, więcej atrakcji, zabytków, restauracji, kawiarni... Widok z wieży robi wrażenie.
+                </div>
+                <div class="bottom">
+                    <label class="name">Emilia Nowakowska</label>
+                </div>
+            </div>
+    </main>
+    </div>
+    <div class="loader">
+        <div class="circleInLoader"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        new Glide('.glide', {
+            type: 'carousel',
+            autoplay: 3000
+        }).mount()
+    </script>
+    <script src="home.js"></script>
+</body>
+</html>

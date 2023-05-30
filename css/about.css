@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+::selection {
+  background-color: #FFC107;
+}
+
+body {
+  background-color: #F5F5F5;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dotsTexture {
+  position: absolute;
+  width: 70%;
+}
+
+.aboutImage {
+  width: 50%;
+  position: absolute;
+}
+
+.textContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textContainer h1 {
+  text-transform: uppercase;
+}
+
+.textContainer > div {
+  height: 60%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  position: relative;
+}
+
+.title h1 {
+  font-size: 2.4rem;
+}
+
+.title {
+  display: flex;
+  position: relative;
+  height: 2.4rem;
+  gap: 10px;
+  max-width: 300px;
+  left: 2%;
+}
+
+.yellowDot {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 1.4rem;
+  background-color: #FFC107;
+  border-radius: 40%;
+  opacity: 0;
+}
+
+.animateDot {
+  animation: showDot 0.5s ease forwards;
+}
+
+.textContainer p {
+  font-weight: bold;
+}
+
+.parContainer {
+  width: 85%;
+}
+
+.yellowArrow {
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
+}
+
+@keyframes showDot {
+  to {
+    opacity: 1;
+  }
+}
+
+.containerReverse {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+}
+
+.blueArrow {
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+}
+
+.textContainerReverse > div {
+  height: 45%;
+}
+
+.titleReverse {
+  max-width: 550px;
+}
+
+#thirdTitle {
+  max-width: 500px;
+}
+
+#fourthTitle {
+  margin-bottom: 6%;
+}
+
+#fourthDot {
+  top: 4.15rem;
+  right: 16.5rem;
+}
+
+.blueDot {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 1.4rem;
+  background-color: #3974AA;
+  border-radius: 40%;
+  opacity: 0;
+}
+
+.mapContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

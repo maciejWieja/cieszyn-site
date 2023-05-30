@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cieszyn | news</title>
+    <link rel="stylesheet" href="./css/news.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="icon" href="./media/herb.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./media/herb.png" alt="herb cieszyna" onclick="location.href = 'home.html'">
+        </div>
+        <ul class="navbar">
+            <li class="navElement">
+                <a href="./home.html" class="navText">strona główna</a>
+            </li>
+            <li class="navElement">
+                <a href="./about.html" class="navText">o mieście</a>
+            </li>
+            <li class="navElement">
+                <a href="./news.html" class="navText">aktualności</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div class="title">
+            <h1>aktualności</h1>
+        </div>
+        <div class="mainContainer">
+            <div class="cards">
+                <p class="msgInfo animateLoading">Ładowanie</p>
+            </div>
+        </div>
+        <br><br>
+    </main>
+    <div class="modalContent">
+        <div class="gridContent">
+            <div class="modalText">
+                <div>
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalDate"></p>
+                </div>
+                <p id="modalContentText">
+                    
+                </p>
+            </div>
+            <figure id="modalFigure">
+                <img src="" alt="krajobraz" id="modalImg">
+                <figcaption id="modalAlt"></figcaption>
+            </figure>
+        </div>
+        <div class="closeBtn">
+            <div class="firstLine"></div>
+            <div class="secondLine"></div>
+        </div>
+    </div>
+    <div class="modalBackground"></div>
+    <script src="news.js"></script>
+</body>
+</html>
